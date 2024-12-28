@@ -41,22 +41,22 @@ public class Menu extends JFrame implements ActionListener {
         g.gridx=0;
         g.gridy=0;
         g.weighty=0.1;
-        g.anchor = g.CENTER;
+        g.anchor = GridBagConstraints.CENTER;
         add(name, g);
 
         g.gridx = 0;
         g.gridy = 1;
-        g.fill = g.HORIZONTAL;
+        g.fill = GridBagConstraints.HORIZONTAL;
         add(button1, g);
 
         g.gridx = 0;
         g.gridy = 2;
-        g.fill = g.HORIZONTAL;
+        g.fill = GridBagConstraints.HORIZONTAL;
         add(button2, g);
 
         g.gridx = 0;
         g.gridy = 3;
-        g.fill = g.HORIZONTAL;
+        g.fill = GridBagConstraints.HORIZONTAL;
         add(button3, g);
     }
 

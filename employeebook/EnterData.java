@@ -1,6 +1,5 @@
 package employeebook;
 
-import java.applet.Applet;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
@@ -19,6 +18,7 @@ public class EnterData extends JFrame implements ActionListener, ItemListener
     JLabel lblEID, lblEName, lblDept, lblDesg, lblDOJ, lblDOB, lblMS, lblDOM;
     JButton btnSubmit, btnCancel;
     JTextField txtEID, txtEName, txtDesg, txtDOJ, txtDOB, txtDOM;
+    @SuppressWarnings("rawtypes")
     JComboBox cmbDepart;
     JRadioButton rbtnMarr, rbtnSing;
     static int index =0;
@@ -26,6 +26,7 @@ public class EnterData extends JFrame implements ActionListener, ItemListener
     String status;
     ButtonGroup bg;
 
+    @SuppressWarnings({ "unchecked", "rawtypes" })
     public EnterData()
     {
         lblEID = new JLabel("Employee ID:");
